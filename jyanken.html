@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>ジャンケンゲーム</title>
-<link rel="stylesheet" href="company.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<article>
 <script>
 var hand = {1:"グー", 2:"チョキ", 3:"パー"};
 var result = ["あいこ", "負け", "勝ち"];
@@ -25,11 +26,15 @@ function janken(num){
     "<p><b>"+result[judge]+"</b>です!!</p>";
 }
 </script>
+
+<section>
 <button type="button" onclick="janken(1);"><img src="" alt="グー"></button>
 <button type="button" onclick="janken(2);"><img src="" alt="チョキ"></button>
 <button type="button" onclick="janken(3);"><img src="" alt="パー"></button>
+</section>
 
 <div id="result"></div>
+</article>
 
 </body>
 </html>
